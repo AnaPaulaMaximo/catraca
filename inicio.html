@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IronPulse Fitness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Arial Black', sans-serif;
+      }
+
+      .invisible {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      }
+
+      .visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="relative text-white">
+    <!-- FUNDO -->
+    <div class="absolute inset-0">
+      <img
+        src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1920&q=80"
+        alt="Treino"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black opacity-60"></div>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="relative z-10 min-h-screen flex flex-col">
+      <!-- HEADER -->
+      <header class="flex items-center justify-between px-4 md:px-8 py-6">
+        <div class="text-2xl md:text-3xl font-black">
+          Iron<span class="text-[#FFD100]">Pulse</span>
+        </div>
+        <a
+          href="index.html"
+          class="bg-[#FFD100] text-black font-bold px-4 md:px-5 py-2 rounded hover:bg-yellow-400 transition text-sm md:text-base"
+        >
+          Área do Aluno
+        </a>
+      </header>
+
+      <!-- CONTEÚDO CENTRAL -->
+      <main class="flex-1 flex flex-col items-center justify-center px-4">
+        <div class="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl gap-8">
+          <!-- LADO ESQUERDO - DATA -->
+          <div class="bg-[#FFD100] px-4 py-2 text-black font-bold text-lg md:text-xl rounded text-center">
+            SÓ ATÉ<br />
+            <span class="text-2xl md:text-3xl">08/04</span>
+          </div>
+
+          <!-- TEXTO CENTRAL -->
+          <div class="text-center md:text-left max-w-xl">
+            <p class="text-xs md:text-sm tracking-wide uppercase mb-2 text-gray-300">
+              Dia Mundial da Atividade Física
+            </p>
+            <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">
+              DIA PERFEITO PRO<br />
+              <span class="text-[#FFD100] italic">"HOJE EU COMEÇO"</span>
+            </h1>
+          </div>
+
+          <!-- LADO DIREITO -->
+          <div class="text-center md:text-right">
+            <h2 class="text-2xl md:text-3xl font-extrabold">
+              PRIMEIRO MÊS <span class="text-[#FFD100]">GRÁTIS*</span>
+            </h2>
+            <p class="mt-2 text-xs md:text-sm text-gray-300">Quem é IronPulse, sabe.</p>
+          </div>
+        </div>
+
+        <!-- SEÇÃO DE PLANOS -->
+        <section
+          id="planos"
+          class="mt-40 w-full max-w-6xl opacity-0 invisible transition-all duration-1000"
+        >
+          <h2 class="text-3xl md:text-4xl font-bold text-center text-[#FFD100] mb-10 drop-shadow-md">
+            Conheça nossos Planos
+          </h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 px-2 md:px-4">
+            <!-- PLANO ANUAL -->
+            <div class="bg-black bg-opacity-70 p-5 md:p-6 rounded-2xl shadow-lg border border-[#FFD100]">
+              <h3 class="text-xl md:text-2xl font-bold text-[#FFD100] mb-3 text-center">Plano Anual</h3>
+              <p class="text-lg font-semibold mb-1 text-center">R$ 1.200 à vista</p>
+              <p class="text-center text-xs mb-3">ou 12x de R$ 120,00</p>
+              <ul class="list-disc list-inside text-sm text-white space-y-1">
+                <li>Acesso ilimitado à academia</li>
+                <li>Acompanhamento mensal com personal</li>
+                <li>Avaliação física gratuita</li>
+                <li>Desconto em eventos</li>
+              </ul>
+            </div>
+
+            <!-- PLANO SEMESTRAL -->
+            <div class="bg-black bg-opacity-70 p-5 md:p-6 rounded-2xl shadow-lg border border-[#FFD100]">
+              <h3 class="text-xl md:text-2xl font-bold text-[#FFD100] mb-3 text-center">Plano Semestral</h3>
+              <p class="text-lg font-semibold mb-1 text-center">R$ 700 à vista</p>
+              <p class="text-center text-xs mb-3">ou 6x de R$ 125,00</p>
+              <ul class="list-disc list-inside text-sm text-white space-y-1">
+                <li>Acesso ilimitado à academia</li>
+                <li>Avaliação física gratuita</li>
+                <li>1 aula experimental com personal</li>
+              </ul>
+            </div>
+
+            <!-- PLANO TRIMESTRAL -->
+            <div class="bg-black bg-opacity-70 p-5 md:p-6 rounded-2xl shadow-lg border border-[#FFD100]">
+              <h3 class="text-xl md:text-2xl font-bold text-[#FFD100] mb-3 text-center">Plano Trimestral</h3>
+              <p class="text-lg font-semibold mb-1 text-center">R$ 400 à vista</p>
+              <p class="text-center text-xs mb-3">ou 3x de R$ 140,00</p>
+              <ul class="list-disc list-inside text-sm text-white space-y-1">
+                <li>Acesso ilimitado à academia</li>
+                <li>Avaliação física</li>
+              </ul>
+            </div>
+
+            <!-- PLANO MENSAL -->
+            <div class="bg-black bg-opacity-70 p-5 md:p-6 rounded-2xl shadow-lg border border-[#FFD100]">
+              <h3 class="text-xl md:text-2xl font-bold text-[#FFD100] mb-3 text-center">Plano Mensal</h3>
+              <p class="text-lg font-semibold mb-1 text-center">R$ 150</p>
+              <p class="text-center text-xs mb-3">Pagamento mensal</p>
+              <ul class="list-disc list-inside text-sm text-white space-y-1">
+                <li>Acesso ilimitado à academia</li>
+                <li>Flexibilidade sem contrato</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- SCRIPT PARA ANIMAÇÃO AO SCROLL -->
+    <script>
+      const section = document.getElementById('planos');
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              section.classList.add('visible');
+              section.classList.remove('invisible', 'opacity-0');
+              observer.disconnect();
+            }
+          });
+        },
+        {
+          threshold: 0.2,
+        }
+      );
+
+      observer.observe(section);
+    </script>
+  </body>
+</html>
