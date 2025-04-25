@@ -2,7 +2,8 @@
 
 Sistema de validação de acesso por CPF para alunos da academia **IronPulse**. Esta aplicação é usada na entrada da academia para liberar ou bloquear o acesso automaticamente.
 
----
+## Link do vercel
+[Clique aqui](https://catraca-alpha.vercel.app/inicio.html)
 
 ## 🚀 Tecnologias utilizadas
 
